@@ -1,80 +1,184 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+:root {
+    --orange: #E9A225;
+    --putih: #ffffff;
+    --abu: #5C5C5C;
+    --hitam: #333333;
+    --coklat: #9E6500;
+    --biru: #F4F6F5;
+}
 
-    <!--TITLE-->
-    <title>BeeOne Course</title>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 
-    <!--CSS-->
-    <link rel="stylesheet" href="style/style.css">
+    /*FONT*/
+    font-family: 'Poppins', sans-serif;
+}
+* h1 {
+    font-size: 2rem;
+}
 
-    <!--FONT-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+/*NAV*/
+nav {
+    background: var(--orange);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
-    <!--BOOTSTRAP FRAMEWORK-->
-<!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
+    padding: 2rem;
+}
+nav .navigation ul{
+    list-style: none;
+    display: flex;
+}
+nav .navigation li {
+    border-bottom: 0.05rem solid var(--putih);
+    transition: ease-in-out 0.25s;
+}
+nav .navigation li:nth-child(2){
+    padding: 0rem 1rem 0rem 1rem;
+}
+nav .navigation li:nth-child(3) {
+    padding: 0rem 1rem 0rem 1rem;
+}
 
-</head>
-<body>
-    <nav>
-        <div class="navigation">
-            <ul>
-                <li><a href="#" style="text-decoration: none">About Us</a></li>
-                <li><a href="#" style="text-decoration: none">Galery</a></li>
-                <li><a href="#" style="text-decoration: none">Review</a></li>
-            </ul>
-        </div>
-        <button class="login">LOGIN</button>
-    </nav>
-    <section class="content">
-        <div class="about-us">
-            <div class="kiri">
-                <div class="vision">
-                    <h2>Our Vision</h2>
-                    <p>Empower individuals through comprehensive and innovative education, fostering a community of lifelong learners equipped with essential skills, cultural awareness, and a global mindset</p>
-                </div>
-                <div class="mision">
-                    <h2>Our Mision</h2>
-                    <p>We aim to  provide high-quality and personalized education in Mandarin and School Tutoring, cultivating a nurturing environment that inspires curiosity, critical thinking, and a passion for continuous learning.</p>
-                </div>
-                <div class="button-learning">
-                    <a href="#">Start learning</a>
-                </div>
-            </div>
-            <div class="kanan">
-                <div class="kanan-atas">
-                    <div class="kanan-atas-kiri">
-                        <h1>BEE-ONE COURSE</h1>
-                        <p>Let’s learn together and achieve your true potential with us!</p>
-                    </div>
-                    <div class="kanan-atas-kanan">
-                        <img src="asset/bee-one-course-Logo.png" alt="bee-one-course-Logo">
-                        <a href="#">REGISTER</a>
-                    </div>
-                </div>
-                <div class="kanan-bawah">
-                    <h2>Visit us!</h2>
-                    <p>Learn more about us here!</p>
-                    <div class="contact">
-                        <img src="asset/facebook-icon.png" alt="">
-                        <img src="asset/instagram-icon.png" alt="">
-                        <img src="asset/twitter-icon.png" alt="">
-                        <img src="asset/linkedin--icon.png" alt="">
-                        <img src="asset/location-icon.png" alt="">
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="galery"></div>
-        <div class="review"></div>
-    </section>
+nav .navigation li:hover {
+    border-bottom: 0.05rem solid var(--coklat);
+    transition: ease-in-out 0.25s;
+}
+nav .navigation a {
+    color: var(--abu);
+    font-weight: 800;
+    transition: ease-in-out 0.25s;
+}
+nav .navigation a:hover {
+    color: var(--putih);
+    font-weight: 800;
+    transition: ease-in-out 0.25s;
+}
+.login {
+    background: var(--putih);
+    color: var(--abu);
+    padding: 0.5rem 1.5rem;
+    border-radius: 0.75rem;
+    transition: ease-in-out 0.25s;
+}
+.login:hover {
+    background: var(--abu);
+    color: var(--putih);
+    cursor: pointer;
+    transition: ease-in-out 0.25s;
+}
 
-<!--    BOOTSTRAP FRAMEWORK-->
-<!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
+/*CONTENT*/
+.content {
+    background: var(--putih);
+    padding: 2rem 0;
+}
+.about-us {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    color: var(--hitam);
+}
+.about-us .kiri {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 30rem;
+}
+.about-us .vision {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+.about-us .mision {
+    text-align: justify;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
 
-</body>
-</html>
+.about-us .button-learning {
+    margin: 2rem 0;
+    font-size: 0.75rem;
+}
+.about-us .button-learning a{
+    color: var(--putih);
+    background: var(--coklat);
+    border-radius: 0.75rem;
+    padding: 0.5rem 1rem;
+    transition: 0.15s ease-in-out;
+}
+.about-us .button-learning a:hover {
+    color: var(--hitam);
+    background: var(--abu);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+/*KANAN*/
+.about-us .kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-us .kanan-atas {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--biru);
+    padding: 0.5rem 2rem;
+}
+.about-us .kanan-atas .kanan-atas-kiri {
+    display: flex;
+    flex-direction: column;
+    width: 10rem;
+}
+.about-us .kanan-atas .kanan-atas-kanan{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.about-us .kanan-atas .kanan-atas-kanan img{
+    width: 20rem;
+    height: auto;
+}
+.about-us .kanan-atas .kanan-atas-kanan a {
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--putih);
+    background: var(--coklat);
+    border-radius: 0.75rem;
+    padding: 0.5rem 7.5rem;
+    transition: 0.15s ease-in-out;
+}
+.about-us .kanan-atas .kanan-atas-kanan a:hover {
+    color: var(--hitam);
+    background: var(--abu);
+    cursor: pointer;
+    transition: 0.15s ease-in-out;
+}
+
+/*ABOUT US KIRI*/
+.about-us .kanan .kanan-bawah {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.kanan-bawah .contact {
+    display: flex;
+    gap: 0.75rem;
+}
+.kanan-bawah .contact img {
+    width: 2rem;
+    height: auto;
+}
