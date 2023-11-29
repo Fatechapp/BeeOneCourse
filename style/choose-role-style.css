@@ -1,0 +1,98 @@
+:root {
+    --orange: #E9A225;
+    --putih: #ffffff;
+    --abu: #5C5C5C;
+    --hitam: #333333;
+    --coklat: #9E6500;
+    --biru: #F4F6F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+    /*FONT*/
+    font-family: 'Poppins', sans-serif;
+}
+body {
+    background: linear-gradient(to bottom, #E9A225, #EABD6FFF, #FFFFFF);
+    height: 100vh;
+}
+.mid-side {
+    margin: 5rem 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.mid-side h1 {
+    font-weight: 300;
+    font-size: 2rem;
+    background: var(--putih);
+    padding: 0rem 2rem;
+    border-radius: 1rem;
+}
+.mid-side .role {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+    font-size: 1.5rem;
+}
+.mid-side .role .teacher-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.mid-side .role .manager-role {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+.mid-side .role img {
+    opacity: 80%;
+    width: 15rem;
+    height: auto;
+    transition: 0.25s ease-in-out;
+}
+.mid-side .role img:hover {
+    opacity: 100%;
+    width: 19rem;
+    height: auto;
+    transition: 0.25s ease-in-out;
+}
+.tombol-balik {
+    position: absolute;
+    top: 33rem;
+    left: 2rem;
+}
+.tombol-balik img {
+    width: 2rem;
+    height: auto;
+    opacity: 70%;
+    transition: 0.25s ease-in-out;
+}
+.tombol-balik img:hover {
+    width: 2rem;
+    height: auto;
+    opacity: 100%;
+    transition: 0.25s ease-in-out;
+}
+
+/*UPPER BUTTERFLY*/
+.upper-butterfly-group {
+    position: absolute;
+    top: 4rem;
+}
+.upper-butterfly-1, .upper-butterfly-2, .upper-butterfly-3, .upper-butterfly-4 img {
+    width: 1rem;
+}
