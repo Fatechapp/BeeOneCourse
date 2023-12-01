@@ -85,6 +85,7 @@ nav .navigation a:hover {
     align-items: center;
     gap: 2rem;
     color: var(--hitam);
+    flex-wrap: wrap-reverse;
 }
 .about-us .kiri {
     display: flex;
@@ -168,7 +169,7 @@ nav .navigation a:hover {
     transition: 0.15s ease-in-out;
 }
 
-/*ABOUT US KIRI*/
+/*ABOUT US KANAN*/
 .about-us .kanan .kanan-bawah {
     display: flex;
     flex-direction: column;
@@ -182,4 +183,11 @@ nav .navigation a:hover {
 .kanan-bawah .contact img {
     width: 2rem;
     height: auto;
+    transition: 0.15s ease-in-out;
+
+}
+.kanan-bawah .contact img:hover {
+    transform: translatey(-0.25rem);
+    transition: 0.15s ease-in-out;
+
 }
