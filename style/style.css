@@ -1,23 +1,5 @@
-:root {
-    --orange: #E9A225;
-    --putih: #ffffff;
-    --abu: #5C5C5C;
-    --hitam: #333333;
-    --coklat: #9E6500;
-    --biru: #F4F6F5;
-}
+@import "main-style.css";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-
-    /*FONT*/
-    font-family: 'Poppins', sans-serif;
-}
 * h1 {
     font-size: 2rem;
 }
@@ -191,3 +173,117 @@ nav .navigation a:hover {
     transition: 0.15s ease-in-out;
 
 }
+
+/*KOTAK KUNING*/
+.kanan-atas-kiri h1 {
+    z-index: 2;
+}
+.kotak-kuning {
+    background: #EBD96B;
+    padding: 1.35rem 5rem;
+    position: absolute;
+    top: 13.25rem;
+    right: 30rem;
+    transform: rotate(-3deg);
+    z-index: 1;
+}
+
+/*GALERY*/
+.galery {
+    padding: 0 2rem;
+}
+.galery h1 {
+    width: 15rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.gallery-image {
+    padding: 2rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+.gallery-image img {
+    width: 15rem;
+    height: 15rem;
+}
+.ellipse-kuning {
+    max-width: 10rem;
+    background: #EBD96B;
+    padding: 1.35rem 5rem;
+
+    z-index: 1;
+}
+
+/*BE OUR TEACHER*/
+.review {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+}
+.card {
+    background: #EAC178;
+    width: 25rem;
+    height: auto;
+    border-radius: 2rem 2rem 0 0;
+    transition: 0.25s ease-in-out;
+}
+.card:hover {
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.50);
+    transition: 0.25s ease-in-out;
+}
+.card .top {
+    background: #F1F1F2;
+    border-radius: 1rem;
+    padding: 2rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    text-align: justify;
+}
+.card .top h2 {
+    font-weight: 700;
+}
+.card .mid {
+    background: #FFC256B2;
+    padding: 1rem;
+}
+.card .bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.apply-button {
+    margin: 2rem 0 3rem 0;
+}
+.apply-button a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: var(--putih);
+    color: var(--hitam);
+    font-weight: 500;
+    padding: 0.5rem 1rem;
+    border-radius: 1rem;
+    transition: 0.35s ease-in-out;
+}
+.apply-button a:hover {
+    background: var(--abu);
+    color: var(--putih);
+    border-radius: 2rem;
+    transition: 0.35s ease-in-out;
+}
+
+@media (max-width: 600px) {
+    html {
+        font-size: 11px;
+    }
+}
+
