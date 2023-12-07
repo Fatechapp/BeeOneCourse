@@ -2,13 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1 initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <!--TITLE-->
     <title>BeeOne Course</title>
 
     <!--CSS-->
     <link rel="stylesheet" href="style/style.css">
+
+    <!--ICON-->
+    <link rel="icon" href="asset/bee-one-course-logo.ico">
 
     <!--FONT-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,62 +21,75 @@
     <!--BOOTSTRAP FRAMEWORK-->
 <!--    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">-->
 
+    <script src="script/script.js"></script>
+
 </head>
 <body>
     <nav>
         <div class="navigation">
             <ul>
-                <li><a href="#" style="text-decoration: none">About Us</a></li>
-                <li><a href="#" style="text-decoration: none">Galery</a></li>
-                <li><a href="#" style="text-decoration: none">Review</a></li>
+                <li><a id="about-us-button" href="#" style="text-decoration: none">About Us</a></li>
+                <li><a id="galery-button" href="#" style="text-decoration: none">Galery</a></li>
+                <li><a id="review-button" href="#" style="text-decoration: none">Review</a></li>
             </ul>
         </div>
-        <button class="login">LOGIN</button>
+        <button id="login" class="login">LOGIN</button>
     </nav>
     <section class="content">
-        <div class="about-us">
-            <div class="kiri">
-                <div class="vision">
-                    <h2>Our Vision</h2>
-                    <p>Empower individuals through comprehensive and innovative education, fostering a community of lifelong learners equipped with essential skills, cultural awareness, and a global mindset</p>
+        <section class="content-about-us">
+            <div class="about-us">
+                <div class="kiri">
+                    <div class="vision">
+                        <h2>Our Vision</h2>
+                        <p>Empower individuals through comprehensive and innovative education, fostering a community of lifelong learners equipped with essential skills, cultural awareness, and a global mindset</p>
+                    </div>
+                    <div class="mision">
+                        <h2>Our Mision</h2>
+                        <p>We aim to  provide high-quality and personalized education in Mandarin and School Tutoring, cultivating a nurturing environment that inspires curiosity, critical thinking, and a passion for continuous learning.</p>
+                    </div>
+                    <div class="button-learning">
+                        <a href="#">Start learning</a>
+                    </div>
                 </div>
-                <div class="mision">
-                    <h2>Our Mision</h2>
-                    <p>We aim to  provide high-quality and personalized education in Mandarin and School Tutoring, cultivating a nurturing environment that inspires curiosity, critical thinking, and a passion for continuous learning.</p>
-                </div>
-                <div class="button-learning">
-                    <a href="#">Start learning</a>
+                <div class="kanan">
+                    <div class="kanan-atas">
+                        <div class="kanan-atas-kiri">
+                            <h1>BEE-ONE COURSE</h1>
+                            <p>Let’s learn together and achieve your true potential with us!</p>
+                        </div>
+                        <div class="kanan-atas-kanan">
+                            <img src="asset/bee-one-course-logo.png" alt="bee-one-course-Logo">
+                            <a href="pages/register-page.html">REGISTER</a>
+                        </div>
+                    </div>
+                    <div class="kanan-bawah">
+                        <h2>Visit us!</h2>
+                        <p>Learn more about us here!</p>
+                        <div class="contact">
+                            <img src="asset/facebook-icon.png" alt="">
+                            <img src="asset/instagram-icon.png" alt="">
+                            <img src="asset/twitter-icon.png" alt="">
+                            <img src="asset/linkedin--icon.png" alt="">
+                            <img src="asset/location-icon.png" alt="">
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="kanan">
-                <div class="kanan-atas">
-                    <div class="kanan-atas-kiri">
-                        <h1>BEE-ONE COURSE</h1>
-                        <p>Let’s learn together and achieve your true potential with us!</p>
-                    </div>
-                    <div class="kanan-atas-kanan">
-                        <img src="asset/bee-one-course-logo.png" alt="bee-one-course-Logo">
-                        <a href="#">REGISTER</a>
-                    </div>
-                </div>
-                <div class="kanan-bawah">
-                    <h2>Visit us!</h2>
-                    <p>Learn more about us here!</p>
-                    <div class="contact">
-                        <img src="asset/facebook-icon.png" alt="">
-                        <img src="asset/instagram-icon.png" alt="">
-                        <img src="asset/twitter-icon.png" alt="">
-                        <img src="asset/linkedin--icon.png" alt="">
-                        <img src="asset/location-icon.png" alt="">
-                    </div>
-                </div>
+        </section>
+
+        <section class="content-galery" hidden="">
+            <div class="galery">
+                <h2>Our Gallery</h2>
             </div>
-        </div>
-        <div class="galery"></div>
-        <div class="review"></div>
+        </section>
+        <section class="content-review" hidden="">
+            <div class="review">
+                <h2>REVIEW</h2>
+            </div>
+        </section>
     </section>
 
-<!--    BOOTSTRAP FRAMEWORK-->
+    <!--BOOTSTRAP FRAMEWORK-->
 <!--    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>-->
 
 </body>
