@@ -1,0 +1,117 @@
+html {
+    font-size: 16px;
+}
+:root {
+    --orange: #E9A225;
+    --putih: #ffffff;
+    --abu: #5C5C5C;
+    --hitam: #333333;
+    --coklat: #9E6500;
+    --biru: #F4F6F5;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
+
+    /*FONT*/
+    font-family: 'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2rem;
+}
+body {
+    background: linear-gradient(to right, var(--orange), #fce5c2, #FFFFFF);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 5rem;
+}
+.icon-manager img{
+    width: auto;
+    height: 20rem;
+}
+.kanan {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 30rem;
+    gap: 2rem;
+    padding: 6rem 0;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+.form .input {
+    width: 100%;
+    background: #FFD097;
+    padding: 0.75rem 1rem;
+    border-radius: 0.75rem;
+    color: var(--putih);
+    font-size: 1.25rem;
+}
+.input::placeholder {
+    font-size: 1.25rem;
+    color: var(--putih);
+    opacity: 50%;
+}
+.submit {
+    color: var(--putih);
+    width: 8rem;
+    font-weight: 700;
+    font-size: 1.25rem;
+    padding: 0.5rem 0;
+    background: var(--coklat);
+    border-radius: 0.75rem;
+    transition: 0.25s ease-in-out;
+    cursor: pointer;
+    margin-top: 1.25rem;
+}
+.submit:hover {
+    background: var(--putih);
+    color: var(--hitam);
+    transition: 0.25s ease-in-out;
+}
+.login-button {
+    display: flex;
+    justify-content: right;
+}
+
+.logo img {
+    width: 12rem;
+    height: auto;
+}
+.tombol-balik {
+    position: absolute;
+    top: 5rem;
+    left: 5rem;
+}
+.tombol-balik img {
+    width: 2rem;
+    height: auto;
+    opacity: 70%;
+    transition: 0.25s ease-in-out;
+}
+.tombol-balik img:hover {
+    width: 2rem;
+    height: auto;
+    opacity: 100%;
+    transition: 0.25s ease-in-out;
+}
