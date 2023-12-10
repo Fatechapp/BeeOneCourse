@@ -1,0 +1,228 @@
+@import "main-style.css";
+
+a {
+    text-decoration: none;
+    color: var(--putih);
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+    font-size: 1rem;
+}
+svg {
+    fill: var(--putih);
+    width: 2rem;
+    transition: 0.25s ease-in-out;
+}
+.tab-menu-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/*Untuk sidebar-container*/
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    background: #EFC375;
+    height: 125vh;
+    color: white;
+    z-index: 10;
+}
+
+/*untuk h1*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.logo img {
+    width: 13rem;
+}
+.menu-item {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu-item a {
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav {
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.25rem;
+    border-bottom: 0.10rem solid var(--putih);
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+.item-nav:hover {
+    border-bottom: 0.10rem solid var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+.item-nav:hover figure svg path {
+    fill: var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav:hover a {
+    color: var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav figure {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
+header {
+    box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.50);
+    background: var(--putih);
+    padding: 0 2rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header h3 {
+    font-weight: 400;
+    z-index: 10;
+}
+header .kanan {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 10;
+}
+header .username {
+    width: 7rem;
+    z-index: 10;
+}
+header .blok {
+    padding: 1.75rem 0.15rem;
+    background: var(--orange);
+    z-index: 10;
+}
+header svg {
+    width: 1.75rem;
+}
+.notification-icon {
+    cursor: pointer;
+    z-index: 10;
+}
+/*Untuk a*/
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+.dropdown button {
+    background: none;
+    cursor: pointer;
+}
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 1rem 1.25rem;
+}
+.dropdown .dropdown-item {
+    background: #EBD96B;
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    min-width: 2rem;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+.dropdown:hover .dropdown-item {
+    display: block;
+}
+
+/*untuk content*/
+.content {
+    width: 100%;
+}
+.content-info {
+    padding: 3rem;
+    z-index: 5;
+}
+.registrasi-option {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+}
+.registrasi-option .card {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    opacity: 85%;
+    transition: 0.15s ease-in-out;
+}
+.registrasi-option .card:hover {
+    opacity: 100%;
+    transition: 0.15s ease-in-out;
+}
+.registrasi-option .card figure {
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.registrasi-option .card img {
+    width: 15rem;
+    transition: 0.15s ease-in-out;
+}
+.registrasi-option .card img:hover {
+    width: 16rem;
+    transition: 0.15s ease-in-out;
+}
+.finance-content-box {
+    display: flex;
+    flex-direction: column;
+    gap: 8rem;
+    justify-content: center;
+    align-items: center;
+}
+.finance-content-box .ellipse {
+    width: 65rem;
+    height: 25rem;
+    position: absolute;
+    top: -13rem;
+    background-color: #FFCC72;
+    border-radius: 50%;
+    z-index: -1;
+}
+.finance-menu {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+.finance-menu a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 500;
+    font-size: 2rem;
+    background: #F5E2C1;
+    color: var(--hitam);
+    width: 30rem;
+    height: 5rem;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.finance-menu a:hover {
+    background: var(--orange);
+}
