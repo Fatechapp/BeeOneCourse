@@ -1,1 +1,297 @@
 @import "main-style.css";
+
+a {
+    text-decoration: none;
+    color: var(--putih);
+    font-weight: 600;
+    transition: 0.25s ease-in-out;
+    font-size: 1rem;
+}
+svg {
+    fill: var(--putih);
+    width: 2rem;
+    transition: 0.25s ease-in-out;
+}
+.tab-menu-container {
+    display: flex;
+    width: 100%;
+    height: auto;
+}
+
+/*Untuk sidebar-container*/
+.sidebar-container {
+    display: flex;
+    flex-direction: column;
+    background: var(--orangeMuda);
+    height: 150vh;
+    color: white;
+    z-index: 10;
+}
+
+/*untuk h1*/
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+.logo img {
+    width: 13rem;
+}
+.menu-item {
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+.menu-item a {
+    color: white;
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav {
+    width: 12rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-top: 0.25rem;
+    border-bottom: 0.10rem solid var(--putih);
+    transition: 0.15s ease-in-out;
+    cursor: pointer;
+}
+.item-nav:hover {
+    border-bottom: 0.10rem solid var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+.item-nav:hover figure svg path {
+    fill: var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav:hover a {
+    color: var(--coklat);
+    transition: 0.15s ease-in-out;
+}
+
+.item-nav figure {
+    width: 3rem;
+    display: flex;
+    justify-content: center;
+}
+header {
+    box-shadow: 0px 10px 10px -2px rgba(0, 0, 0, 0.50);
+    background: var(--putih);
+    padding: 0 2rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 10;
+}
+header h3 {
+    font-weight: 400;
+    z-index: 10;
+}
+header .kanan {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+    z-index: 10;
+}
+header .username {
+    width: 7rem;
+    z-index: 10;
+}
+header .blok {
+    padding: 1.75rem 0.15rem;
+    background: var(--orange);
+    z-index: 10;
+}
+header svg {
+    width: 1.75rem;
+}
+.notification-icon {
+    cursor: pointer;
+    z-index: 10;
+}
+/*Untuk a*/
+.dropdown {
+    display: flex;
+    justify-content: center;
+}
+.dropdown button {
+    background: none;
+    cursor: pointer;
+}
+.dropdown a {
+    display: block;
+    color: black;
+    text-decoration: none;
+    font-weight: 400;
+    padding: 1rem 1.25rem;
+}
+.dropdown .dropdown-item {
+    background: var(--kuning);
+    position: absolute;
+    top: 3rem;
+    right: 1rem;
+    min-width: 2rem;
+    box-shadow: 2px 2px 5px black;
+    display: none;
+}
+.dropdown:hover .dropdown-item {
+    display: block;
+}
+
+/*untuk content*/
+.content {
+    width: 100%;
+}
+.content-info {
+    padding: 2rem 3rem;
+    z-index: 5;
+}
+
+/*DASHBOARD*/
+.dashboard-content-info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5rem;
+}
+.kiri {
+    display: flex;
+    flex-direction: column;
+    width: 30rem;
+    gap: 2rem;
+}
+.kiri-atas {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.kiri-progress {
+    display: flex;
+    gap: 1rem;
+    padding-bottom: 1.5rem;
+}
+.credit-card, .credit-card-2 {
+    width: 100%;
+    height: 15rem;
+    padding: 2rem;
+    border-radius: 5px;
+    background: linear-gradient(45deg, #D0A860, #151928);
+    color: var(--putih);
+}
+.credit-card-2 {
+    height: 10rem;
+}
+.dashboard-content .session-time-container {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+/*PROGRESS*/
+.hijau {
+    color: var(--hijau);
+}
+.progress-box {
+    background-color: var(--putih);
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    max-width: 200px;
+    width: 10rem;
+}
+.progress-box p {
+    font-weight: 600;
+}
+.progress-bar {
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 0.5rem;
+    overflow: hidden;
+}
+.progress-indicator {
+    height: 100%;
+    background-color: var(--hijau);
+}
+
+/*KANAN*/
+.dahboard-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    width: 24rem;
+}
+.task-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+    overflow: scroll;
+    height: 36.5rem;
+    padding: 0rem 2rem;
+    box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.25) inset;
+    border-radius: 2rem;
+}
+.task-list::-webkit-scrollbar {
+    width: 5px;
+}
+.task-list::-webkit-scrollbar-thumb {
+    display: none;
+    background-color: var(--hijau); /* Gunakan warna yang Anda tentukan */
+    border-radius: 3px; /* Atur sudut bulat untuk thumb */
+}
+.task-list-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2rem;
+
+    margin-top: 20rem;
+}
+
+/*ADDITIONAL TASK*/
+.additional-task {
+    background-color: var(--putih);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    box-shadow: 0 2rem 3rem rgba(0, 0, 0, 0.1);
+    z-index: 0;
+    height: 9rem;
+}
+.additional-task-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 2rem;
+    position: relative;
+    z-index: 100;
+}
+.additional-task-kiri {
+    flex-basis: 40%;
+}
+.additional-task-kanan {
+    flex-basis: 60%;
+}
+.additional-task-kanan p {
+    text-align: justify;
+    font-size: 0.75rem;
+}
+.segitiga {
+    background: linear-gradient(133deg, #0043FF -3.41%, #A370F1 100%);
+    width: 3rem;
+    height: 1rem;
+
+    position: relative;
+    top: -0.23rem;
+    right: -90%;
+    border-radius: 0 0 1rem 0;
+    z-index: 10;
+}

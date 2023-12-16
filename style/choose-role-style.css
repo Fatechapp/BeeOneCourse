@@ -1,23 +1,5 @@
-:root {
-    --orange: #E9A225;
-    --putih: #ffffff;
-    --abu: #5C5C5C;
-    --hitam: #333333;
-    --coklat: #9E6500;
-    --biru: #F4F6F5;
-}
+@import "main-style.css";
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    outline: none;
-    border: none;
-    text-decoration: none;
-
-    /*FONT*/
-    font-family: 'Poppins', sans-serif;
-}
 body {
     background: linear-gradient(to bottom, #E9A225, #EABD6FFF, #FFFFFF);
     height: 100vh;
@@ -25,6 +7,7 @@ body {
 .mid-side {
     margin: 5rem 0;
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -39,6 +22,7 @@ body {
 }
 .mid-side .role {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 5rem;
@@ -53,6 +37,7 @@ body {
 }
 .mid-side .role .manager-role {
     display: flex;
+    flex-wrap: wrap;
     flex-direction: column;
     justify-content: center;
     align-items: center;
@@ -70,6 +55,8 @@ body {
     height: auto;
     transition: 0.25s ease-in-out;
 }
+
+/*TOMBOL BALIK*/
 .tombol-balik {
     position: absolute;
     top: 33rem;

@@ -22,7 +22,7 @@ svg {
 .sidebar-container {
     display: flex;
     flex-direction: column;
-    background: #EFC375;
+    background: var(--orangeMuda);
     height: 125vh;
     color: white;
     z-index: 10;
@@ -132,7 +132,7 @@ header svg {
     padding: 1rem 1.25rem;
 }
 .dropdown .dropdown-item {
-    background: #EBD96B;
+    background: var(--kuning);
     position: absolute;
     top: 3rem;
     right: 1rem;
@@ -198,7 +198,7 @@ header svg {
     height: 25rem;
     position: absolute;
     top: -13rem;
-    background-color: #FFCC72;
+    background-color: var(--orangeMuda);
     border-radius: 50%;
     z-index: -1;
 }
