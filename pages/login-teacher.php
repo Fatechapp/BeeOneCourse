@@ -62,7 +62,7 @@ $conn->close();
 </div>
 <div class="container">
     <div class="kiri">
-        <div class="icon-teacher">
+        <div class="icon-manager">
             <img src="../asset/teacher-login-icon.png" alt="">
         </div>
     </div>
