@@ -24,7 +24,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
     if ($result->num_rows == 1) {
         // Login successful
         $_SESSION["Username"] = $Username;
-        header("Location: dashboard.php"); // Redirect to a dashboard page
+        header("Location: dashboard-manager.php"); // Redirect to a dashboard page
         exit();
     } else {
         // Login failed
