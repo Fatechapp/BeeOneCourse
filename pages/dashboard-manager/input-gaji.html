@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+    <!--TITLE-->
+    <title>BeeOne Course</title>
+
+    <!--CSS-->
+    <link rel="stylesheet" href="../../style/input-gaji.css">
+
+    <!--ICON-->
+    <link rel="icon" href="../../asset/bee-one-course-logo.ico">
+
+    <!--FONT-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;700&display=swap" rel="stylesheet">
+
+    <!--SCRIPT-->
+    <script src="../../script/dashboard-manager-script.js"></script>
+
+</head>
+<body>
+<div class="title">
+    <h1>INPUT GAJI</h1>
+</div>
+<div class="input-gaji">
+    <div class="input-gaji-kiri">
+        <form id="gajiForm">
+            <div class="NIK inputan">
+                <label for="nik">NIK:</label>
+                <input type="text" id="nik" name="nik" required>
+            </div>
+            <div class="nama inputan">
+                <label for="nama">Nama Guru:</label>
+                <input type="text" id="nama" name="nama" required>
+            </div>
+            <div class="jumlah-sesi inputan">
+                <label for="jumlahSesi">Jumlah Sesi:</label>
+                <input type="number" id="jumlahSesi" name="jumlahSesi" required>
+            </div>
+            <div class="registration-fee inputan">
+                <label for="registrationFee">Registration Fee:</label>
+                <input type="number" id="registrationFee" name="registrationFee" required>
+            </div>
+            <div class="jumlah-murid inputan">
+                <label for="jumlahMurid">Jumlah Murid:</label>
+                <input type="number" id="jumlahMurid" name="jumlahMurid" required>
+            </div>
+        </form>
+    </div>
+    <div class="input-gaji-kanan">
+        <div class="total-gaji inputan">
+            <label for="totalGaji">Total Gaji:</label>
+            <input type="text" id="totalGaji" name="totalGaji" readonly>
+        </div>
+        <button type="button" onclick="hitungTotalGaji()" style="color: white;">Hitung Total Gaji</button>
+    </div>
+    <a href="dashboard-manager.html">
+        <img src="../../asset/back-vector.png" alt="" style="width: 3rem; position: absolute; top: 30rem; left: 2rem">
+    </a>
+</div>
+<div style="display: flex; justify-content: center; padding: 2rem">
+    <button type="button" style="font-weight: 600; color: white">Submit</button>
+</div>
+<script>
+    function hitungTotalGaji() {
+        // Mendapatkan nilai dari input
+        var jumlahSesi = parseInt(document.getElementById('jumlahSesi').value);
+        var registrationFee = parseInt(document.getElementById('registrationFee').value);
+        var jumlahMurid = parseInt(document.getElementById('jumlahMurid').value);
+
+        // Melakukan perhitungan total gaji
+        var totalGaji = jumlahSesi * 0.5 * ((0.4 * registrationFee) * jumlahMurid) ;
+
+        // Menetapkan nilai total gaji pada input readonly
+        document.getElementById('totalGaji').value = totalGaji;
+    }
+</script>
+
+
+</body>
+</html>
