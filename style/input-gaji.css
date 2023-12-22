@@ -1,0 +1,55 @@
+@import "main-style.css";
+
+.title {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+.title h1 {
+    background: var(--kuningMuda);
+    padding: 1rem 15rem;
+    border-radius: 1.5rem 0 0 1.5rem;
+}
+input {
+    background: #F9F0E1;
+    border-radius: 1rem;
+    color: var(--hitam);
+    padding: 0 1rem;
+    width: 20rem;
+    height: 3rem;
+    box-shadow: 2px 5px 15px 5px rgba(0, 0, 0, 0.10) inset;
+}
+.input-gaji-kanan {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.input-gaji {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    padding: 1rem;
+    gap: 5rem;
+}
+button {
+    width: 10rem;
+    padding: 0.5rem 0rem;
+    border-radius: 1rem;
+    background: var(--orangeMuda);
+    cursor: pointer;
+    transition: 0.25s ease-in-out;
+}
+button:hover {
+    background: var(--orange);
+    transition: 0.25s ease-in-out;
+}
+#gajiForm {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.inputan {
+    display: flex;
+    flex-direction: column;
+}
